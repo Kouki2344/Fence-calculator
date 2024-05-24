@@ -45,4 +45,4 @@ while keep_going == "":
     keep_going = input("Press enter to keep going or any key to quit. ")
     print()
 
-print("Thank you for using the area / perimeter calculator")
+print("Thank you for using the perimeter calculator")
