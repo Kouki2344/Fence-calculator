@@ -1,7 +1,8 @@
 # Ask user for width and loop until they
 # enter a number that is more than zero
 def num_check(question):
-    error = "Please enter a number that is more than zero/n"
+    error = "Please enter a number that is more than zero"
+    errorB = "Please enter a number"
     while True:
 
         try:
@@ -13,10 +14,11 @@ def num_check(question):
                    return response
                 else:
                    print(error)
+        
 
 
         except ValueError:
-             print(error)
+             print(errorB)
 # Main Rountine starts here
 
 
@@ -28,7 +30,7 @@ while keep_going == "":
     height = num_check("Height: ")
 
     # enter the cost per meter
-    cost = int(input("Cost per meter: "))
+    cost = num_check("Cost per meter: ")
         
     # Caculate  perimeter
     perimeter = 2 * (width + height)
